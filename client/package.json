@@ -17,6 +17,7 @@
     "ajv": "^6.10.0",
     "ajv-keywords": "^3.4.0",
     "axios": "^0.18.0",
+    "magic-grid": "^3.2.4",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vuetify": "^1.5.9",
