@@ -1,21 +1,31 @@
 <template>
-
-  <v-container grid-list-md text-xs-center>
-    <v-layout row wrap>
-    <v-flex v-for="animal in animals"
-         :key="animal.id" xs12>
-      <div>
-        <v-img class="animal-image" :src="animal.imageURL"/>
-      </div>
-      <div class="animal-name">
-        {{animal.name}}
-      </div>
-      <div class="animal-age">
-        {{animal.age}} years old
-      </div>
-      </v-flex>
-    </v-layout>
-  </v-container>
+    <v-container>
+        <v-layout row wrap>
+          <v-flex v-for="animal in animals"
+            :key="animal.id" xs12 md3>
+              <div class="animal-name">
+                {{animal.name}}
+              </div>
+              <div class="animal-info">
+                {{animal.age}} years,
+                {{animal.breed}} ,
+                {{animal.location}}
+              </div>
+              <br>
+              <div class="animal-description">
+                {{animal.description}}
+              </div>
+              <br>
+              <v-btn class="black" dark>Contact Shelter</v-btn>
+          </v-flex>
+          <v-flex xs12 md1>
+          </v-flex>
+          <v-flex v-for="animal in animals"
+             :key="animal.id" xs12 md8>
+            <v-img class="animal-image" :src="animal.imageURL"/>
+          </v-flex>
+        </v-layout>
+    </v-container>
 </template>
 
 <script>
@@ -41,11 +51,8 @@ export default {
   font-weight: bold;
   font-size: 150%;
   }
-.animal-age {
+.animal-info {
   font-style: italic;
   font-size: 100%;
-  }
-.filter {
-  color: orange;
   }
 </style>

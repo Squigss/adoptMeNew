@@ -1,5 +1,5 @@
 <template>
-  <v-container mb-5>
+  <v-container>
   <v-toolbar class="header" flat fixed>
     <v-toolbar-title class="Title"
       :to="{

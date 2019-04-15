@@ -1,6 +1,7 @@
 <template>
-  <v-layout column>
-    <div>
+  <v-container text-xs-center>
+    <v-layout row wrap>
+      <v-flex xs12>
         <input
             type = "name"
             name = "name"
@@ -54,8 +55,9 @@
             @click="add">
           Add
         </v-btn>
-    </div>
+    </v-flex>
   </v-layout>
+  </v-container>
 </template>
 
 <script>
