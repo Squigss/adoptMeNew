@@ -1,24 +1,26 @@
 <template>
-  <v-layout column>
+<v-container class="container-body" text-xs-center>
+  <v-layout row wrap>
+    <v-flex xs12>
       <h1>Welcome Back!</h1>
         <br>
-          <v-btn
-            class="cyan" dark
+          <button
             :to="{
               name: 'animals'
             }">
             Browse Animals for adoption
-          </v-btn>
+          </button>
           <br>
-          <v-btn
-            class="cyan" dark
+          <button
             @click="register"
             :to="{
               name: 'add-animal'
             }">
             Add an Animal to adopt
-          </v-btn>
+          </button>
+    </v-flex>
   </v-layout>
+</v-container>
 </template>
 
 <script>
@@ -27,4 +29,7 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  padding-bottom: 2%;
+}
 </style>

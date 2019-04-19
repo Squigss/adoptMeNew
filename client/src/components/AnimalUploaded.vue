@@ -1,16 +1,9 @@
 <template>
-  <v-layout column>
+  <v-container class="container-body" text-xs-center>
+    <v-layout row wrap>
       <h1>Good Job! Upload successful</h1>
-        <br>
-          <v-btn
-            class="cyan" dark
-            @click="register"
-            :to="{
-              name: 'add-animal'
-            }">
-            Add an Animal to adopt
-          </v-btn>
-  </v-layout>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>

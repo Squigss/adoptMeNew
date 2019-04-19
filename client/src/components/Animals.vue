@@ -5,7 +5,6 @@
         <v-toolbar flat class="filter">
           <v-toolbar-title>Filter</v-toolbar-title>
           <v-spacer></v-spacer>
-          
          <v-toolbar-items class='filterItems'>
            <!--type search-->
           <ul>

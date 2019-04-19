@@ -4,10 +4,11 @@
       <v-flex xs12>
         <h1>Add your cute companion to be adopted</h1>
         <input
-            type = "name"
+            type = "text"
             name = "name"
             v-model="animal.name"
-            placeholder= "name"/>
+            placeholder= "name"
+            required/>
           <br>
           <br>
         <input
@@ -86,6 +87,7 @@ export default {
       } catch (err) {
         console.log('System error when uploading your animal profile')
       }
+      this.$router.push('/animal/uploaded')
     },
     onFileSelected (event) {
       this.selectedFile = event.target.file[0]

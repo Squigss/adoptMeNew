@@ -52,6 +52,7 @@ h1 {
     text-transform: uppercase;
     transition: all 0.25s ease 0s;
     min-width: 50px;
+    max-width: 300px;
     font-weight: bold;
   }
 
