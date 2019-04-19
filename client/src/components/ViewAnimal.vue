@@ -46,6 +46,7 @@ export default {
 <style scoped>
 .container-body {
   margin-top: 150px;
+  margin-bottom: 100px;
 }
 .animal-image {
   width: 100%;
