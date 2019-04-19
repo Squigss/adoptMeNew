@@ -48,3 +48,7 @@ h1 {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     background:#ffffff;
   }
+
+  .container-body {
+      margin-top: 50px;
+  }

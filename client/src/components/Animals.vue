@@ -1,9 +1,14 @@
 <template>
-  <v-container grid-list-md text-xs-center>
+  <v-container class="container-body" grid-list-md text-xs-center>
     <v-layout row wrap>
       <v-flex xs12>
         <v-toolbar flat class="filter">
           <v-toolbar-title>Filter</v-toolbar-title>
+          <v-spacer></v-spacer>
+
+         <v-toolbar-items class='toolbarItems'>
+        </v-toolbar-items>
+        
         </v-toolbar>
       </v-flex>
       <v-flex v-for="animal in animals"
@@ -55,7 +60,6 @@ export default {
   width: 100%;
 }
 .animal-name {
-  font-weight: bold;
   font-size: 150%;
   padding-top: 3%;
 }

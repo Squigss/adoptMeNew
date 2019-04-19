@@ -1,5 +1,5 @@
 <template>
-    <v-container>
+    <v-container class="container-body">
         <v-layout row wrap>
           <v-flex v-for="animal in animals"
             :key="animal.id" xs12 md3>

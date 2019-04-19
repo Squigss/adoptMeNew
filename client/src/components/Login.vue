@@ -1,5 +1,5 @@
 <template>
-  <v-container class="text-xs-center">
+  <v-container class="container-body" text-xs-center>
     <v-layout row wrap>
       <v-flex xs12>
           <h1>Login</h1>
