@@ -1,6 +1,7 @@
 h1 {
     text-align:center;
-    padding-bottom: 5%;
+    padding-bottom: 8%;
+    padding-top: 5%;
   }
   input {
     color: "teal";
@@ -14,6 +15,8 @@ h1 {
     border-style: none none solid none;
     box-shadow: none;
     border-color: teal;
+    width: 40%;
+    min-width: 250px;
   }
   textarea {
     color: "teal";
@@ -27,6 +30,8 @@ h1 {
     border-style: none none solid none;
     box-shadow: none;
     border-color: teal;
+    width: 40%;
+    min-width: 250px;
   }
   button {
     background: teal;
@@ -36,6 +41,7 @@ h1 {
     padding: 10px 50px;
     text-transform: uppercase;
     transition: all 0.25s ease 0s;
+    min-width: 50px;
   }
 
   #app {

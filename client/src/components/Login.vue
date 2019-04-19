@@ -1,12 +1,8 @@
 <template>
-  <v-layout column>
-    <v-flex xs6 offset-xs3>
-      <div class="white elevation-2">
-        <v-toolbar flat dense class="cyan" dark>
-          <v-toolbar-title>Login</v-toolbar-title>
-        </v-toolbar>
-
-        <div class="pl-4 pr-4 pt-2 pb-2">
+  <v-container class="text-xs-center">
+    <v-layout row wrap>
+      <v-flex xs12>
+          <h1>Login</h1>
           <input
             type = "email"
             name = "email"
@@ -23,15 +19,13 @@
           <br>
           <div class="error" v-html="error"/>
           <br>
-          <v-btn
-            class="cyan" dark
+          <button
             @click="login">
             Login
-          </v-btn>
-        </div>
-     </div>
-    </v-flex>
-  </v-layout>
+          </button>
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>

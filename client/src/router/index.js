@@ -10,7 +10,6 @@ import Welcome from '@/components/Welcome'
 import RegisterConfirmation from '@/components/RegisterConfirmation'
 import AnimalUploaded from '@/components/AnimalUploaded'
 
-
 Vue.use(Router)
 
 export default new Router({

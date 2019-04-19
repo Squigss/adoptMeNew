@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+ <!-- <v-container>-->
   <v-toolbar class="header" flat fixed>
     <v-toolbar-title class="Title"
       :to="{
@@ -44,7 +44,7 @@
       </v-btn>
     </v-toolbar-items>
   </v-toolbar>
-  </v-container>
+  <!--</v-container>-->
 </template>
 
 <script>
@@ -63,8 +63,7 @@ export default {
 
 <style scoped>
 .header {
-  background-color: transparent!important;
-  border-color: transparent!important;
-  height: 20%;
+  background-color: transparent;
+  border-color: transparent;
 }
 </style>

@@ -36,7 +36,7 @@
             type = "description"
             name = "description"
             v-model="animal.description"
-            placeholder= "description"/>
+            placeholder= "description..."/>
           <br>
           <br>
         <input
@@ -47,8 +47,9 @@
           <br>
           <br>
           <input type="file" @change="onFileSelected"/>
+          <br>
           <button class="secondary-button"
-            @click="onUpload">upload
+            @click="onUpload">upload image
           </button>
           <br>
           <br>
@@ -98,10 +99,11 @@ export default {
 
 <style scoped>
 .secondary-button {
-  background: white;
-  border: 1px solid black;
+  background: #E5E5E5;
+  border: 1px solid #A4A4A4;
   border-radius: 3px;
-  text-transform: uppercase;
-  transition: all 0.25s ease 0s;
+  margin: 15px 0;
+  padding: 5px 5px;
+
 }
 </style>
