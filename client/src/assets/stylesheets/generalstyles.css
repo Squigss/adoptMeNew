@@ -1,0 +1,44 @@
+h1 {
+    text-align:center;
+    padding-bottom: 5%;
+  }
+  input {
+    color: "teal";
+    margin: 0;
+    opacity: 1;
+    transition:
+    .333s ease top, .333s ease opacity;
+    border-radius: 0;
+    border-color: #ccc;
+    border-width: 0 0 2px 0;
+    border-style: none none solid none;
+    box-shadow: none;
+    border-color: teal;
+  }
+  textarea {
+    color: "teal";
+    margin: 0;
+    opacity: 1;
+    transition:
+    .333s ease top, .333s ease opacity;
+    border-radius: 0;
+    border-color: #ccc;
+    border-width: 0 0 2px 0;
+    border-style: none none solid none;
+    box-shadow: none;
+    border-color: teal;
+  }
+  button {
+    background: teal;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 15px 0;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    transition: all 0.25s ease 0s;
+  }
+
+  #app {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background:#ffffff;
+  }

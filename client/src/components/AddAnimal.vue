@@ -1,7 +1,8 @@
 <template>
-  <v-container text-xs-center>
+  <v-container class="text-xs-center">
     <v-layout row wrap>
       <v-flex xs12>
+        <h1>Add your cute companion to be adopted</h1>
         <input
             type = "name"
             name = "name"
@@ -30,7 +31,8 @@
             placeholder= "location (enter city)"/>
           <br>
           <br>
-        <input
+        <textarea
+            rows="5"
             type = "description"
             name = "description"
             v-model="animal.description"
@@ -45,16 +47,15 @@
           <br>
           <br>
           <input type="file" @change="onFileSelected"/>
-          <v-btn
+          <button class="secondary-button"
             @click="onUpload">upload
-          </v-btn>
+          </button>
           <br>
           <br>
-        <v-btn
-            class="cyan" dark
+        <button
             @click="add">
           Add
-        </v-btn>
+        </button>
     </v-flex>
   </v-layout>
   </v-container>
@@ -96,4 +97,11 @@ export default {
 </script>
 
 <style scoped>
+.secondary-button {
+  background: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  text-transform: uppercase;
+  transition: all 0.25s ease 0s;
+}
 </style>

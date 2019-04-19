@@ -15,6 +15,7 @@
 <script>
 import PageHeader from '@/components/Header.vue'
 import PageFooter from '@/components/Footer.vue'
+
 export default {
   name: 'app',
   components: {
@@ -24,9 +25,6 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  background:white;
-}
+<style src='./assets/stylesheets/generalstyles.css'>
 </style>
+

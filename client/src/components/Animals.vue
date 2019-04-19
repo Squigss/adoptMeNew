@@ -7,7 +7,7 @@
         </v-toolbar>
       </v-flex>
       <v-flex v-for="animal in animals"
-         :key="animal.id" fluid xs6>
+         :key="animal.id" fluid xs12 sm6 md6 lg4>
       <div>
         <v-card class="clickable"
         flat
@@ -57,13 +57,17 @@ export default {
 .animal-name {
   font-weight: bold;
   font-size: 150%;
+  padding-top: 3%;
 }
 .animal-age {
   font-style: italic;
   font-size: 100%;
+  padding-bottom: 8%;
 }
 .filter {
   background-color: white;
   font-style: italic;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 </style>
