@@ -44,6 +44,9 @@ export default {
 </script>
 
 <style scoped>
+.container-body {
+  margin-top: 150px;
+}
 .animal-image {
   width: 100%;
 }
