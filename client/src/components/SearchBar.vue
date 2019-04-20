@@ -1,5 +1,4 @@
 <template>
-  <v-container class="container-body" grid-list-md text-xs-center>
       <v-flex xs12>
         <v-toolbar flat class="filter">
           <v-toolbar-title>Filter</v-toolbar-title>
@@ -11,7 +10,7 @@
             name = "search"
             v-model="search"
             placeholder= "enter search term"/>
-           <!--type search
+           <!--type search-->
           <ul>
             <li class="filter-menu">
               <a class="filter-main"
@@ -26,7 +25,7 @@
                 </ul>
             </li>
           </ul>
-          location search
+          <!--location search-->
           <ul>
             <li class="filter-menu">
               <a class="filter-main"
@@ -41,7 +40,7 @@
                 </ul>
             </li>
           </ul>
-          age search
+          <!--age search-->
           <ul>
             <li class="filter-menu">
               <a class="filter-main"
@@ -55,53 +54,17 @@
                   </li>
                 </ul>
             </li>
-          </ul>-->
+          </ul>
         </v-toolbar-items>
         </v-toolbar>
       </v-flex>
-
-    <v-layout row wrap>
-      <v-flex v-for="animal in animals"
-         :key="animal.id" fluid xs12 sm6 md6 lg4>
-      <div>
-        <v-card class="clickable"
-        flat
-        @click="naviguateTo({
-              name: 'animal',
-              params: {
-                 animalId: animal.id
-              }
-        })">
-        <v-img class="animal-image" :src="animal.imageURL" aspect-ratio="1"/>
-      </v-card>
-      </div>
-      <div class="animal-name">
-        {{animal.name}}
-      </div>
-      <div class="animal-age">
-        {{animal.age}} years old
-      </div>
-      </v-flex>
-    </v-layout>
-  </v-container>
 </template>
 
 <script>
-import AnimalsService from '@/services/AnimalsService'
-
 export default {
   data () {
     return {
-      search: '',
-      animals: []
-    }
-  },
-  async mounted () {
-    this.animals = (await AnimalsService.index()).data
-  },
-  methods: {
-    naviguateTo (route) {
-      this.$router.push(route)
+      search: ''
     }
   },
   watch: {
@@ -118,9 +81,8 @@ export default {
     },
     '$route.query.search': {
       immediate: true,
-      async handler (value) {
+      handler (value) {
         this.search = value
-        this.animals = (await AnimalsService.index(value)).data
       }
     }
   }
@@ -128,24 +90,13 @@ export default {
 </script>
 
 <style scoped>
-.animal-image {
-  width: 100%;
-}
-.animal-name {
-  font-size: 150%;
-  padding-top: 3%;
-}
-.animal-age {
-  font-style: italic;
-  font-size: 100%;
-  padding-bottom: 8%;
-}
 .filter {
   background-color: white;
   font-style: italic;
   padding-top: 3%;
   padding-bottom: 3%;
 }
+
 a {
   font-size: 14px;
   text-decoration: none;
@@ -155,11 +106,13 @@ a {
   display: block;
   padding: 30px 15px;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
+
 li {
   margin: 0;
 }

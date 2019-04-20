@@ -1,8 +1,12 @@
 import Api from '@/services/Api'
 
 export default {
-  index () {
-    return Api().get('animals')
+  index (search) {
+    return Api().get('animals', {
+      params: {
+        search: search
+      }
+    })
   },
   post (animal) {
     return Api().post('animals', animal)

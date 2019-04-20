@@ -5,6 +5,8 @@ import Register from '@/components/Register'
 import Login from '@/components/Login'
 import Animals from '@/components/Animals'
 import AddAnimal from '@/components/AddAnimal'
+import EditAnimal from '@/components/EditAnimal'
+import DeleteAnimal from '@/components/DeleteAnimal'
 import ViewAnimal from '@/components/ViewAnimal'
 import Welcome from '@/components/Welcome'
 import RegisterConfirmation from '@/components/RegisterConfirmation'
@@ -48,6 +50,16 @@ export default new Router({
       path: '/animal/add',
       name: 'add-animal',
       component: AddAnimal
+    },
+    {
+      path: '/animal/edit',
+      name: 'edit-animal',
+      component: EditAnimal
+    },
+    {
+      path: '/animal/delete',
+      name: 'delete-animal',
+      component: DeleteAnimal
     },
     {
       path: '/animal/uploaded',
